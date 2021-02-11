@@ -1,3 +1,4 @@
+# Code to implement the proposed approch in simulation studies
 library("ranger")
 library("locfit")
 require("SuperLearner")
