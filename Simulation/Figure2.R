@@ -6,6 +6,8 @@ library("gridExtra")
 set.seed(3)
 t_lag <- 1
 n <- 1
+
+# senario with time length 200
 T <- 200
 model <- "SL"
 time <- rep(1:T, n)
@@ -32,7 +34,7 @@ Sim100 <- data.frame(logOR = log(delta.seq),
                      sd_true = sqrt((colMeans(test$est.var1.ipw) - colMeans(test$est.eff)^2) / T),
                      sd_upper = sqrt((colMeans(test$est.var2.ipw)) / T))
 
-n <- 1
+# senario with time length 1000
 T <- 1000
 model <- "SL"
 time <- rep(1:T, n)
@@ -59,7 +61,7 @@ Sim1000 <- data.frame(logOR = log(delta.seq),
                       sd_true = sqrt((colMeans(test$est.var1.ipw) - colMeans(test$est.eff)^2) / T),
                       sd_upper = sqrt((colMeans(test$est.var2.ipw)) / T))
 
-n <- 1
+# senario with time length 5000
 T <- 5000
 model <- "SL"
 time <- rep(1:T, n)
@@ -86,7 +88,7 @@ Sim5000 <- data.frame(logOR = log(delta.seq),
                       sd_true = sqrt((colMeans(test$est.var1.ipw) - colMeans(test$est.eff)^2) / T),
                       sd_upper = sqrt((colMeans(test$est.var2.ipw)) / T))
 
-
+# Figure 2
 p100 <- ggplot(data = Sim100, aes(x = logOR, y = estimated)) +
   geom_line(aes(x = logOR, y = estimated), color = "red", lwd = 1.2) +
   geom_line(aes(x = logOR, y = true), color = "blue", lwd = 1.2) +
