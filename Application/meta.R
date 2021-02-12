@@ -6,14 +6,13 @@ library(dplyr)
 
 t_lag <- 2
 
-
-for (i in c("deaths",17:21)) {
+for (i in c("deaths", 17:21)) {
   load(paste0(Dir,i,"_t",t_lag, "_SL.RData"))
-  mean.est.eff <- do.call("rbind",lapply(est.eff, `[[`, 1))
-  mean.var1 <- do.call("rbind",lapply(est.eff, `[[`, 2))
+  mean.est.eff <- do.call("rbind", lapply(est.eff, `[[`, 1))
+  mean.var1 <- do.call("rbind", lapply(est.eff, `[[`, 2))
   T <- 214
   N <- length(est.eff)
-  sd_true <- sqrt((mean.var1 - (mean.est.eff)^2)[1:50,]/(T))
+  sd_true <- sqrt((mean.var1 - (mean.est.eff)^2)[1:50, ] / (T))
   
   curves <- as.data.frame(t(mcmapply(function(delta) {
     madata <- as.data.frame(cbind(TE = mean.est.eff[, delta],

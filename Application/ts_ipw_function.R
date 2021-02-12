@@ -14,7 +14,6 @@ library("ggplot2")
 library("grid")
 library("gridExtra")
 
-
 delta.seq <- exp(seq(-2.3, 2.3, length.out = 50))
 sl.lib = c("SL.earth", "SL.gam", "SL.glm", "SL.glm.interaction", "SL.mean", "SL.ranger", "SL.rpart")
 
@@ -24,20 +23,20 @@ ts_ipsi.ipw <- function(dat,
                         threshold = 0,
                         delta.seq,
                         model = "glm"){
-  # setup storage
+  # setup
   ntimes <- length(table(dat$time)) 
   n <- length(unique(dat$id))
   T <- max(dat$time)
   k <- length(delta.seq)
   a_lag1 <- dat$a
-  a_lag1[rep(2:T, n) + rep(seq(0, (n-1) * T, T), rep(T - 1, n))] <- dat$a[-seq(T, n * T, T)]
+  a_lag1[rep(2:T, n) + rep(seq(0, (n - 1) * T, T), rep(T - 1, n))] <- dat$a[-seq(T, n * T, T)]
   a_lag1[seq(0, (n * T - 1), T) + 1] <- 0
   
+  # fit propensity score model
   if (model == "glm") {
     trtmod <- glm(a ~ ., data = cbind(x.trt, a = dat$a, a_lag1 = a_lag1), family = binomial())
     dat$ps <- predict(trtmod, data=cbind(x.trt, a_lag1 = a_lag1), type = "response")
   } else if (model == "ranger") {
-    # fit treatment model
     trtmod <- ranger(a ~ ., data=cbind(x.trt, a = dat$a, a_lag1 = a_lag1)) 
     dat$ps <- predict(trtmod, data = cbind(x.trt, a_lag1 = a_lag1))$predictions
   } else if (model == "SL") {
@@ -47,6 +46,8 @@ ts_ipsi.ipw <- function(dat,
                            family = binomial)
     dat$ps <- trtmod$SL.predict
   }
+
+  # implement the stochastic interventions
   end <- max(dat$time)
   est.eff.ipw <- matrix(NA, nrow = n*(end - t_lag), ncol = k)
   for (j in 1:k){
@@ -61,6 +62,8 @@ ts_ipsi.ipw <- function(dat,
       }
     }
   }
+
+  # calculate the variance of the estimator of stochastic interventions
   est.var1.ipw <- matrix(NA, nrow = n * (end - t_lag), ncol = k)
   est.var2.ipw <- matrix(NA, nrow = n * (end - t_lag), ncol = k)
   for (j in 1:k){

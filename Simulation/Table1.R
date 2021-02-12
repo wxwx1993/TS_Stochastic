@@ -4,6 +4,7 @@ library("data.table")
 library("xtable")
 source("ts_ips_fun2.R")
 
+# function to calculate the bias and mean squared errors
 bias_mse <- function(n,
                      T,
                      t_lag,
@@ -38,6 +39,7 @@ bias_mse <- function(n,
   return(c(abs_bias, rmse))
 }
 
+# calculate the bias and mean squared errors for each of the simulation senarios
 diff_table <- sapply(list.files("/Users/apple/Dropbox/Incremental_TS/Simulation/n1_T200_lag1_glm",
                                 pattern = "\\.rds",
                                 full.names = TRUE), 
@@ -232,4 +234,4 @@ bias_mse = data.frame(T = round(rep(c(200, 1000, 5000), rep(3, 3)), 0),
                                           paste0(round(10*bias_mse5000_2_sl[1],2),"(", round(10*bias_mse5000_2_sl[2],2),")"),
                                           paste0(round(10*bias_mse5000_5_sl[1],2),"(", round(10*bias_mse5000_5_sl[2],2),")"),
                                           paste0(round(10*bias_mse5000_10_sl[1],2),"(", round(10*bias_mse5000_10_sl[2],2),")")))
-print(xtable(bias_mse, include.rownames=FALSE))
+print(xtable(bias_mse, include.rownames = FALSE))
