@@ -1,4 +1,4 @@
-# Code to generate Figure 2
+# Code to generate Figure 4
 library("ggplot2")
 library("grid")
 library("gridExtra")
