@@ -1,4 +1,4 @@
-# Code to generate Table 1:  The Integrated Bias and RMSE (multiplied by 10 for easier interpretation).
+# Code to generate Table 2:  The Integrated Bias and RMSE (multiplied by 10 for easier interpretation).
 library("parallel")
 library("data.table")
 library("xtable")
