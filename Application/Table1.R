@@ -1,7 +1,7 @@
-# Code to generate Table 2
+# Code to generate Table 1
 library(dplyr)
 
-# Table 2:  characteristics for NWS-issued heat alerts, all-cause deaths among Medicare enrollees, 
+# Table 1:  characteristics for NWS-issued heat alerts, all-cause deaths among Medicare enrollees, 
 # and cause-specific hospitalizations for five heat-related diseases among Medicare FFS enrollees across April-October of 2006-2016
 summary_alert <- daily_fips_main %>% 
   group_by(fips, year) %>%
