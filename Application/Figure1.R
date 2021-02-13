@@ -1,4 +1,4 @@
-# Code to generate Figure 3
+# Code to generate Figure 1
 library(tidyverse)
 library(sp)
 library("raster")
