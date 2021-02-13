@@ -1,4 +1,4 @@
-# Code to generate Figure 4
+# Code to generate Figure 2
 library(dplyr)
 
 # Figure 4: NWS-issued heat alerts for Los Angeles county 2006-2016.
