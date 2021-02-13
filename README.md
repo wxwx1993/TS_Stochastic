@@ -6,9 +6,9 @@ This is the data repository for public available code and data to reproduce anal
 
 [`FAS folder`](https://github.com/wxwx1993/TS_Incremental/tree/main/Simulation/FAS) contains all the necessary implementation code to run all simulation replicates at the Odyssey cluster, supported by the FAS Division of Science, Research Computing Group at Harvard University.
 
-[`Table1.R`](https://github.com/wxwx1993/TS_Incremental/blob/main/Simulation/Table1.R) contains the code to reproduce Table 1 in the manuscript.
+[`Table2.R`](https://github.com/wxwx1993/TS_Incremental/blob/main/Simulation/Table2.R) contains the code to reproduce Table 2 in the manuscript.
 
-[`Figure2.R`](https://github.com/wxwx1993/TS_Incremental/blob/main/Simulation/Figure2.R) contains the code to reproduce Figure 2 in the manuscript.
+[`Figure4.R`](https://github.com/wxwx1993/TS_Incremental/blob/main/Simulation/Figure4.R) contains the code to reproduce Figure 4 in the manuscript.
 
 <b>Application Code: </b><br>
 [`ts_ipw_function.R`](https://github.com/wxwx1993/TS_Incremental/blob/main/Application/ts_ipw_function.R) contains the function to estimate the proposed estimator.
@@ -17,11 +17,11 @@ This is the data repository for public available code and data to reproduce anal
 
 [`meta.R`](https://github.com/wxwx1993/TS_Incremental/blob/main/Application/meta.R) contains the code to run random-effect meta-analysis that pooled causal effect cruve from 2817 US counties.
 
-[`Table2.R`](https://github.com/wxwx1993/TS_Incremental/blob/main/Application/Table2.R) contains the code to reproduce Table 2 in the manuscript.
+[`Table1.R`](https://github.com/wxwx1993/TS_Incremental/blob/main/Application/Table1.R) contains the code to reproduce Table 1 in the manuscript.
 
-[`Figure3.R`](https://github.com/wxwx1993/TS_Incremental/blob/main/Application/Figure3.R) contains the code to reproduce Figure 3 in the manuscript.
+[`Figure1.R`](https://github.com/wxwx1993/TS_Incremental/blob/main/Application/Figure1.R) contains the code to reproduce Figure 1 in the manuscript.
 
-[`Figure4.R`](https://github.com/wxwx1993/TS_Incremental/blob/main/Application/Figure4.R) contains the code to reproduce Figure 4 in the manuscript.
+[`Figure2.R`](https://github.com/wxwx1993/TS_Incremental/blob/main/Application/Figure2.R) contains the code to reproduce Figure 2 in the manuscript.
 
 [`Figure5.R`](https://github.com/wxwx1993/TS_Incremental/blob/main/Application/Figure5.R) contains the code to reproduce Figure 5 in the manuscript.
 
@@ -34,3 +34,5 @@ Heat Alert: We gathered text files containing records of all non-precipitation a
 Heat Index: We obtained 4-km gridded estimates of daily maximum temperature and vapor-pressure deficit using the Parameter-elevation Regressions on Independent Slopes Model (PRISM). From these variables, the time series of population-weighted daily maximum heat index is calculated for each county as previously described by Spangler et al, 2019. 
 
 Medicare Outcome: We obtained daily all-cause deaths among the entire Medicare enrollees and cause-specific hospitalizations for five heat-related diseases (heat stroke, urinary tract infections, septicemia, renal failure, fluid and electrolyte disorders) using Clinical Classifications Software (CCS) groupings of principal discharge diagnosis codes among the Medicare Fee-for-Service (FFS) enrollees.
+
+For Medicare data, Research Identifiable Files (RIF) on the Medicare population has previously been disclosed to team members at the Harvard School of School of Public Health (HSPH) by the Centers for Medicare and Medicaid Services (CMS) under the strict terms of a CMS Data Use Agreement, which requires stringent privacy protections. Medicare population individual-level data are stored at a Level-3 secured data platform on Research Computing Environment, supported by the Institute for Quantitative Social Science in the Faculty of Arts and Sciences at Harvard University. Interested parties may submit their research proposals to CMS and request the same data files that we use in this paper. More information can be found in the CMS website (https://www.cms.gov/Research-Statistics-Data-and-Systems/Files-for-Order/Data-Disclosures-Data-Agreements/Overview).
