@@ -4,6 +4,7 @@ library(meta)
 library(metafor)
 library(dplyr)
 
+Dir = "~/Dropbox/Incremental_TS/Data/result_hosp_all/"
 t_lag <- 2
 
 for (i in c("deaths", 17:21)) {
