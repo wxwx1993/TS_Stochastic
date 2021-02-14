@@ -1,5 +1,5 @@
 # Assessing the causal effects of a stochastic intervention in time series data: Are heat alerts effective in preventing deaths and hospitalizations?
-This is the data repository for public available code and data to reproduce analyses in Wu, X., Weinberger, K. R., Wellenius, G. A., Braun, D. and Dominici, F., 2020. Time Series Stochastic Causal Estimands: Assessing Heat Alert Effectiveness in Reducing Morbidity and Mortality
+This is the data repository for public available code and data to reproduce analyses in Wu, X., Weinberger, K. R., Wellenius, G. A., Braun, D. and Dominici, F., 2021. Assessing the causal effects of a stochastic intervention in time series data: Are heat alerts effective in preventing deaths and hospitalizations?
 
 <b>Simulation Code: </b><br>
 [`ts_ips_fun2.R`](https://github.com/wxwx1993/TS_Incremental/blob/main/Simulation/ts_ips_fun2.R) contains the functions to generate simulated data sets under each scenario and estimate the proposed estimator.
