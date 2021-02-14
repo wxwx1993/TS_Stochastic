@@ -1,4 +1,4 @@
-# Time Series Stochastic Causal Estimands: Assessing Heat Alert Effectiveness in Reducing Morbidity and Mortality
+# Assessing the causal effects of a stochastic intervention in time series data: Are heat alerts effective in preventing deaths and hospitalizations?
 This is the data repository for public available code and data to reproduce analyses in Wu, X., Weinberger, K. R., Wellenius, G. A., Braun, D. and Dominici, F., 2020. Time Series Stochastic Causal Estimands: Assessing Heat Alert Effectiveness in Reducing Morbidity and Mortality
 
 <b>Simulation Code: </b><br>
