@@ -38,7 +38,7 @@ For Medicare data, Research Identifiable Files (RIF) on the Medicare population 
 
 ![](./Application/Figures/allcounty_alert_heat_min2.jpeg)
 ![](./Application/Figures/allcounty_alert_num2.jpeg)
-Figure: The minimal threshold heat index of all heat alert days per county (upper panel) and the number of heat alerts days per county (lower panel) in all 2817 counties across April-October of 2006-2016.
+Figure 1: The minimal threshold heat index of all heat alert days per county (upper panel) and the number of heat alerts days per county (lower panel) in all 2817 counties across April-October of 2006-2016.
 
 ![](./Application/Figures/Heat_alerts.jpeg)
-Figure: NWS-issued heat alerts for Los Angeles county 2006-2016.
+Figure 2: NWS-issued heat alerts for Los Angeles county 2006-2016.
