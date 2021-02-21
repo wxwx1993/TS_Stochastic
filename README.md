@@ -25,7 +25,6 @@ This is the data repository for public available code and data to reproduce anal
 
 [`Figure5.R`](https://github.com/wxwx1993/TS_Incremental/blob/main/Application/Figure5.R) contains the code to reproduce Figure 5 in the manuscript.
 
-
 <b>Data: </b><br>
 The authors acquired daily time series data on 1) daily maximum heat index; 2) issuance of heat alerts; and 3) number of all-cause deaths among the entire Medicare enrollees and cause-specific hospitalizations for five heat-related diseases (heat stroke, urinary tract infections, septicemia, renal failure, fluid and electrolyte disorders) using Clinical Classifications Software (CCS) groupings of principal discharge diagnosis codes among the Medicare Fee-for-Service (FFS) enrollees in 2817 U.S. counties within the warm season (April-October) from 2006 to 2016 (a total of 2354 days).
 
@@ -36,3 +35,10 @@ Heat Index: We obtained 4-km gridded estimates of daily maximum temperature and 
 Medicare Outcome: We obtained daily all-cause deaths among the entire Medicare enrollees and cause-specific hospitalizations for five heat-related diseases (heat stroke, urinary tract infections, septicemia, renal failure, fluid and electrolyte disorders) using Clinical Classifications Software (CCS) groupings of principal discharge diagnosis codes among the Medicare Fee-for-Service (FFS) enrollees.
 
 For Medicare data, Research Identifiable Files (RIF) on the Medicare population has previously been disclosed to team members at the Harvard School of School of Public Health (HSPH) by the Centers for Medicare and Medicaid Services (CMS) under the strict terms of a CMS Data Use Agreement, which requires stringent privacy protections. Medicare population individual-level data are stored at a Level-3 secured data platform on Research Computing Environment, supported by the Institute for Quantitative Social Science in the Faculty of Arts and Sciences at Harvard University. Interested parties may submit their research proposals to CMS and request the same data files that we use in this paper. More information can be found in the CMS website (https://www.cms.gov/Research-Statistics-Data-and-Systems/Files-for-Order/Data-Disclosures-Data-Agreements/Overview).
+
+![](./Application/Figures/allcounty_alert_heat_min2.jpeg)
+![](./Application/Figures/allcounty_alert_num2.jpeg)
+Figure: The minimal threshold heat index of all heat alert days per county (upper panel) and the number of heat alerts days per county (lower panel) in all 2817 counties across April-October of 2006-2016.
+
+![](./Application/Figures/Heat_alerts.jpeg)
+Figure: NWS-issued heat alerts for Los Angeles county 2006-2016.
