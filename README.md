@@ -8,7 +8,7 @@ This is the data repository for public available code and data to reproduce anal
 
 [`Table2.R`](https://github.com/wxwx1993/TS_Incremental/blob/main/Simulation/Table2.R) contains the code to reproduce Table 2 in the manuscript.
 
-[`Figure2&S1.R`](https://github.com/wxwx1993/TS_Incremental/blob/main/Simulation/Figure4.R) contains the code to reproduce Figure 2 and Figure S1 of the simulation.
+[`Figure2&S1.R`](https://github.com/wxwx1993/TS_Incremental/blob/main/Simulation/Figure2&S1.R) contains the code to reproduce Figure 2 and Figure S1 of the simulation.
 
 <b>Application Code: </b><br>
 [`ts_ipw_function_v3.R`](https://github.com/wxwx1993/TS_Incremental/blob/main/Application/ts_ipw_function_v3.R) contains the function to estimate the proposed estimator and the corresponding upper bound of the variance estimator..
