@@ -21,7 +21,7 @@ This is the data repository for public available code and data to reproduce anal
 
 [`Figure1.R`](https://github.com/wxwx1993/TS_Incremental/blob/main/Application/Figure1.R) contains the code to reproduce Figure 1: NWS-issued heat alerts for Los Angeles County during the warm months (April-October) of 2006-2016.
 
-[`Figure3.R`](https://github.com/wxwx1993/TS_Incremental/blob/main/Application/Figure2.R) contains the code to reproduce Figure 2: The estimated pooled 2-lag causal effect curves of average all-cause deaths and cause-specific hospitalizations for five heat-related diseases per day per county among 2,837 counties.
+[`Figure3.R`](https://github.com/wxwx1993/TS_Incremental/blob/main/Application/Figure3.R) contains the code to reproduce Figure 2: The estimated pooled 2-lag causal effect curves of average all-cause deaths and cause-specific hospitalizations for five heat-related diseases per day per county among 2,837 counties.
 
 <b>Data: </b><br>
 The authors acquired daily time series data during the warm months (April-October) of 2006-2016 for N = 2,837 U.S. counties. For each county, we obtained 1) daily maximum heat index (an index that combines air temperature and relative humidity to posit a human-perceived equivalent temperature); 2) daily issuance of heat alerts (binary); and 3) daily number of all-cause deaths and cause-specific hospitalizations for five heat-related diseases (heat stroke, urinary tract infections, septicemia, renal failure, fluid and electrolyte disorders) among Medicare enrollees. causes of hospitalizations was classfied using Clinical Classifications Software (CCS) groupings of principal discharge diagnosis codes among the Medicare Fee-for-Service (FFS) enrollees.
