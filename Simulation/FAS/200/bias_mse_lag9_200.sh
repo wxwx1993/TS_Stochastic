@@ -15,4 +15,4 @@ module load R/3.4.2-fasrc01
 #module load R_core/3.4.2-fasrc01
 #module load R_packages/3.4.2-fasrc02
 
-R CMD BATCH --quiet --no-restore --no-save bias_mse_lag9_200.R /n/home01/xwu1993/ts_ips/output/test_${SLURM_ARRAY_TASK_ID}.Rout
+R CMD BATCH --quiet --no-restore --no-save bias_mse_lag9_200.R /n/home01/xwu1993/ts_ips2/output/test_${SLURM_ARRAY_TASK_ID}.Rout

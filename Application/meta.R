@@ -11,13 +11,15 @@ for (i in c("deaths", 17:21)) {
   load(paste0(Dir,i,"_t",t_lag, "_SL.RData"))
   mean.est.eff <- do.call("rbind", lapply(est.eff, `[[`, 1))
   mean.var1 <- do.call("rbind", lapply(est.eff, `[[`, 2))
+  sum.var1 <- do.call("rbind",lapply(est.eff, `[[`, 3))
   T <- 214
   N <- length(est.eff)
-  sd_true <- sqrt((mean.var1 - (mean.est.eff)^2)[1:50, ] / (T))
+  sd_bound <- 1/((T-t_lag)*11)*sqrt(sum.var1[1:50,])
+
   
   curves <- as.data.frame(t(mcmapply(function(delta) {
     madata <- as.data.frame(cbind(TE = mean.est.eff[, delta],
-                                  seTE = sd_true[, delta]))
+                                  seTE = sd_bound[, delta]))
     m <- metagen(TE,
                  seTE,
                  data=madata,

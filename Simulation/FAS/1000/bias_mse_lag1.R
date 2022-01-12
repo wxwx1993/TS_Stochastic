@@ -5,8 +5,8 @@ source("/n/home01/xwu1993/ts_ips2/ts_ips_fun_v3.R")
 library("parallel")
 
 n = 1
-T = 200
-t_lag = 9
+T = 1000
+t_lag = 1
 model = "glm"
 
   set.seed(1)
@@ -50,6 +50,7 @@ if (file.exists(subDir)){
   saveRDS(diff, file = paste0(subDir, "/mse/", process, ".rds"))
   saveRDS(coverage, file = paste0(subDir, "/coverage/coverage", process, ".rds"))
 }
+
 
 
 
