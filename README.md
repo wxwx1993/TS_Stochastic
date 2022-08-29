@@ -2,7 +2,7 @@
 This is the data repository for public available code and data to reproduce analyses in Wu, X., Weinberger, K. R., Wellenius, G. A., Braun, D. and Dominici, F., 2021. Assessing the causal effects of a stochastic intervention in time series data: Are heat alerts effective in preventing deaths and hospitalizations?
 
 <b>Simulation Code: </b><br>
-[`ts_ips_fun_v4.R`](https://github.com/wxwx1993/TS_Incremental/blob/main/Simulation/ts_ips_fun_v4.R) contains the main functions to estimate the proposed estimator and the corresponding upper bound of the variance estimator.
+[`ts_ips_fun_v4.R`](https://github.com/wxwx1993/TS_Incremental/blob/main/Simulation/ts_ips_fun_v4.R) contains the main functions to estimate the IPW estimator and the corresponding upper bound of the variance estimator; the influence-function-based estimator and the corresponding empirical variance estimator.
 
 [`FAS folder`](https://github.com/wxwx1993/TS_Incremental/tree/main/Simulation/FAS) contains all the necessary implementation code to run simulation at the Odyssey cluster, supported by the FAS Division of Science, Research Computing Group at Harvard University.
 
