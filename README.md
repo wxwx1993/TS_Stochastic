@@ -15,7 +15,7 @@ This is the data repository for public available code and data to reproduce anal
 
 [`RCE folder`](https://github.com/wxwx1993/TS_Incremental/blob/main/Application/RCE) contains all the necessary implementation code to analyze the real data to estimate the causal effects of increasing the probability of issuing heat alerts  in reducing deaths and hospitalizations among Medicare population in each of 2,837 US counties at the Level-3 secured data platform on Research Computing Environment, supported by the Institute for Quantitative Social Science in the Faculty of Arts and Sciences at Harvard University.
 
-[`meta.R`](https://github.com/wxwx1993/TS_Incremental/blob/main/Application/meta.R) contains the code to run random-effect meta-analysis that pooled causal effect cruve from 2,837 US counties.
+[`spatial_meta.R`](https://github.com/wxwx1993/TS_Incremental/blob/main/Application/spatial_meta.R) contains the code to run spatial random-effect meta-analysis that pooled causal effect cruve from 2,837 US counties.
 
 [`Table1.R`](https://github.com/wxwx1993/TS_Incremental/blob/main/Application/Table1.R) contains the code to reproduce Table 1: Characteristics for NWS-issued heat alerts, deaths and hospitalizations among Medicare enrollees.
 
