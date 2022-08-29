@@ -71,9 +71,49 @@ dat_fips_1$a_inc <- sapply(1:2354,
                                               1,
                                               prob = c(1 - dat_fips_1$ps_inc[i], dat_fips_1$ps_inc[i])))
 
-plot(dat_fips_1$Date, dat_fips_1$HImaxF_PopW, type = "l", ylab = "Heat Index", xlab = "Date")
-a <- subset(dat_fips_1, a_inc == 1)
-lines(a$Date, a$HImaxF_PopW, type = "p", col = "red")
+par(mar = c(2.5, 2.5, 1.5, 1)) # Set the margin on all sides to 2
+
+plot(dat_fips_1$Date, dat_fips_1$HImaxF_PopW, type = "l", 
+     ylab = "", 
+     xlab = "",
+     main = "",
+     mgp=c(0.35,0.35,0), col = rgb(red = 0, green = 0, blue = 0, alpha = 0.6), lwd = 0.5)
+title(ylab="Heat Index", line=1.35, cex.lab=1.2)
+title(xlab="Date", line=1.35, cex.lab=1.2)
+#title(main="Heat alerts in Los Angeles county 2006-2016", line=0.5, cex.main=1.2)
+title(main="Heat alerts in Los Angeles county 2006-2016 (Pre-intervened vs. Post-intervened)", line=0.5, cex.main=1.2)
+
 
 b <- subset(dat_fips_1, alert == 1)
-lines(b$Date, b$HImaxF_PopW, type = "p", col = "blue", pch = 4)
+lines(b$Date, b$HImaxF_PopW, type = "p", col = "blue", pch = 4, cex=1.5)
+#legend("topright", legend=c("Issued Heat Alerts"),
+#       col=c("blue"), pch = 4, pt.cex = 1.5, pt.lwd = 1.5)
+
+a <- subset(dat_fips_1, a_inc == 1)
+lines(a$Date, a$HImaxF_PopW, type = "p", col = "red", pch = 1, cex=1.5)
+legend("topright", legend=c("Issued Heat Alerts", "Post-intervened Heat Alerts"),
+       col=c("blue", "red"), pch = c(4,1), cex = 0.8, pt.cex = 1.2, pt.lwd = 1.5)
+
+
+
+par(mar = c(2.5, 2.5, 1.5, 1)) # Set the margin on all sides to 2
+
+plot(dat_fips_1$Date, dat_fips_1$HImaxF_PopW, type = "l", 
+     ylab = "", 
+     xlab = "",
+     main = "",
+     mgp=c(0.35,0.35,0), col = rgb(red = 0, green = 0, blue = 0, alpha = 0.6), lwd = 0.5)
+title(ylab="Heat Index", line=1.35, cex.lab=1.2)
+title(xlab="Date", line=1.35, cex.lab=1.2)
+#title(main="Heat alerts in Los Angeles county 2006-2016", line=0.5, cex.main=1.2)
+title(main="Heat alerts in Los Angeles county 2006-2016", line=0.5, cex.main=1.2)
+
+
+
+#legend("topright", legend=c("Issued Heat Alerts"),
+#       col=c("blue"), pch = 4, pt.cex = 1.5, pt.lwd = 1.5)
+
+a <- subset(dat_fips_1, a_inc == 1)
+lines(a$Date, a$HImaxF_PopW, type = "p", col = "red", pch = 1, cex=1.5)
+legend("topright", legend=c("Counterfactual Heat Alerts"),
+       col=c("red"), pch = c(1), pt.cex = 1.5, pt.lwd = 1.5)
