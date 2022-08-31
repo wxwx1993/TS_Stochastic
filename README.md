@@ -33,6 +33,3 @@ Heat Index: We obtained 4-km gridded estimates of daily maximum temperature and 
 Medicare Outcome: We obtained daily all-cause deaths among the entire Medicare enrollees and cause-specific hospitalizations for five heat-related diseases among the Medicare Fee-for-Service (FFS) enrollees.
 
 For Medicare data, Research Identifiable Files (RIF) on the Medicare population has previously been disclosed to team members at the Harvard School of School of Public Health (HSPH) by the Centers for Medicare and Medicaid Services (CMS) under the strict terms of a CMS Data Use Agreement, which requires stringent privacy protections. Medicare population individual-level data are stored at a Level-3 secured data platform on Research Computing Environment, supported by the Institute for Quantitative Social Science in the Faculty of Arts and Sciences at Harvard University. Interested parties may submit their research proposals to CMS and request the same data files that we use in this paper. More information can be found in the CMS website (https://www.cms.gov/Research-Statistics-Data-and-Systems/Files-for-Order/Data-Disclosures-Data-Agreements/Overview).
-
-![](./Application/Figures/Heat_alerts.eps)
-Figure 1: NWS-issued heat alerts for Los Angeles, CA during the warm months (April-October) of 2006-2016.
