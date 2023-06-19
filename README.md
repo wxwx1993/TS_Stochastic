@@ -1,5 +1,5 @@
 # Assessing the causal effects of a stochastic intervention in time series data: Are heat alerts effective in preventing deaths and hospitalizations?
-This is the data repository for public available code and data to reproduce analyses in Wu, X., Weinberger, K. R., Wellenius, G. A., Braun, D. and Dominici, F., 2021. Assessing the causal effects of a stochastic intervention in time series data: Are heat alerts effective in preventing deaths and hospitalizations?
+This is the data repository for publicly available code and data to reproduce analyses in 3.	Wu X, Weinberger KR, Wellenius GA, Dominici F, Braun D. Assessing the causal effects of a stochastic intervention in time series data: are heat alerts effective in preventing deaths and hospitalizations? Biostatistics. 2023. doi: 10.1093/biostatistics/kxad002.
 
 <b>Simulation Code: </b><br>
 [`ts_ips_fun_v4.R`](https://github.com/wxwx1993/TS_Incremental/blob/main/Simulation/ts_ips_fun_v4.R) contains the main functions to estimate the IPW estimator and the corresponding upper bound of the variance estimator; the influence-function-based estimator and the corresponding empirical variance estimator.
