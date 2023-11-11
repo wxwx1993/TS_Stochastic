@@ -1,6 +1,7 @@
+# Assessing the causal effects of a stochastic intervention in time series data: Are heat alerts effective in preventing deaths and hospitalizations?
+
 <img src="https://img.shields.io/badge/Study%20Status-Publication%20Available-green.svg" alt="Study Status: Publication Available"> 
 
-# Assessing the causal effects of a stochastic intervention in time series data: Are heat alerts effective in preventing deaths and hospitalizations?
 This is the data repository for publicly available code and data to reproduce analyses in Wu X, Weinberger KR, Wellenius GA, Dominici F, Braun D. Assessing the causal effects of a stochastic intervention in time series data: are heat alerts effective in preventing deaths and hospitalizations? Biostatistics. 2023. doi: 10.1093/biostatistics/kxad002.
 
 <b>Simulation Code: </b><br>
